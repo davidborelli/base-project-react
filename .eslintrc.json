@@ -9,6 +9,11 @@
         "plugin:@typescript-eslint/recommended",
         "prettier/react"
     ],
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaFeatures": {
@@ -25,6 +30,8 @@
     "rules": {
       "prettier/prettier": "error",
       "@typescript-eslint/consistent-type-definitions": "off",
-      "@typescript-eslint/strict-boolean-expressions": "off"
+      "@typescript-eslint/strict-boolean-expressions": "off",
+      "react/jsx-uses-react": "error",
+      "react/jsx-uses-vars": "error"
     }
 }
